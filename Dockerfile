@@ -6,9 +6,7 @@ EXPOSE 8000
 RUN apt update && apt -y install git fish 
 COPY requirements.txt .
 RUN pip install -r requirements.txt \
-    && pip install black
+    && pip install black pytest
 COPY . /app
-#RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
-#USER appuser
 WORKDIR /app/src
 CMD sleep infinity
