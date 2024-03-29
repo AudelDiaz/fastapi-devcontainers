@@ -1,9 +1,7 @@
 **/__pycache__
 **/.venv
 **/.classpath
-#**/.dockerignore
 **/.env
-#**/.git
 **/.gitignore
 **/.project
 **/.settings
@@ -15,12 +13,12 @@
 **/*.jfm
 **/bin
 **/charts
-#**/docker-compose*
-#**/compose*
-#**/Dockerfile*
 **/node_modules
 **/npm-debug.log
 **/obj
 **/secrets.dev.yaml
 **/values.dev.yaml
-#README.md
+**.mutmut*
+**html/
+**.spec
+**.coverage

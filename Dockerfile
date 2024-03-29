@@ -6,7 +6,7 @@ EXPOSE 8000
 RUN apt update && apt -y install git fish 
 COPY requirements.txt .
 RUN pip install -r requirements.txt \
-    && pip install black pytest
+    && pip install black pytest coverage mutmut
 COPY . /app
 WORKDIR /app/src
 CMD sleep infinity
